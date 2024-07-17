@@ -8,6 +8,7 @@ TagManager:
   - Dart
   - DartSpawn
   - Paper
+  - Weapon
   layers:
   - Default
   - TransparentFX
