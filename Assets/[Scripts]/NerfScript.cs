@@ -2,89 +2,85 @@ using UnityEngine;
 
 public class NerfScript : MonoBehaviour
 {
-    public GameObject DartPrefab;
+    public GameObject DartPrefab; // The dart prefab to instantiate
 
-    private Transform SpawnLocation;
-
-    private GameObject SpawnDart()
-    {
-        #region ...
-        //check if prefab is null
-        if (DartPrefab == null)
-        {
-            Debug.Log("empty...");
-            return null;
-        }
-        #endregion
-
-        GameObject Dart = null;
-        Dart = Instantiate(DartPrefab, SpawnLocation.position, SpawnLocation.rotation);
-        Debug.Log("LAUNCH THE PROJECTILE!");
-
-        Dart = Instantiate(DartPrefab, SpawnLocation.position, SpawnLocation.rotation);
-
-        return Dart;
-    }
-
-
-    private AudioSource audioSource;
+    private Transform spawnLocation; // Location where darts will be spawned
+    private AudioSource audioSource; // Audio source for playing shoot sound
+    private float lastShotTime; // Time of the last shot
+    private float dartDelay = 0.2f; // Delay between shots
+    [Range(0, 1024), SerializeField] private float dartSpeed = 500f; // Speed of the dart
+    AudioSource sound;
 
     private void Awake()
     {
+        // Get the AudioSource component
         audioSource = GetComponent<AudioSource>();
+        if (audioSource == null)
+        {
+            Debug.LogError("AudioSource component missing from the GameObject.");
+        }
     }
 
     private void Start()
     {
-        SpawnLocation = GameObject.FindGameObjectWithTag("DartSpawn").transform;
-
+        sound = GetComponent<AudioSource>();
+        // Find the spawn location by tag
+        GameObject spawnLocationObj = GameObject.FindGameObjectWithTag("DartSpawn");
+        if (spawnLocationObj != null)
+        {
+            spawnLocation = spawnLocationObj.transform;
+        }
+        else
+        {
+            Debug.LogError("No GameObject with tag 'DartSpawn' found in the scene.");
+        }
     }
-
-    private float lastShot;
-
-    [Range(0, 1024), SerializeField] private float DartSpeed;
-
-    private float DartDelay = 0.2f;
-
-    #region Dart Physics Logic
 
     public void ShootDart()
     {
-        if (DartPrefab == null)
+        sound.Play();
+        // Check if DartPrefab is assigned and spawnLocation is valid
+        if (DartPrefab == null || spawnLocation == null)
+        {
+            Debug.LogWarning("DartPrefab or spawnLocation is not set.");
+            return;
+        }
+
+        // Ensure the time since the last shot is greater than the dart delay
+        if (Time.time - lastShotTime < dartDelay)
         {
             return;
         }
 
-        if (lastShot > Time.time)
+        // Instantiate the dart and add force to it
+        GameObject dart = Instantiate(DartPrefab, spawnLocation.position, spawnLocation.rotation);
+        Rigidbody dartRB = dart.GetComponent<Rigidbody>();
+
+        if (dartRB != null)
         {
-            return;
+            // Apply force to the dart
+            dartRB.AddForce(dart.transform.forward * dartSpeed);
+            Destroy(dart, 5f); // Destroy the dart after 5 seconds
+        }
+        else
+        {
+            Debug.LogWarning("DartPrefab is missing a Rigidbody component.");
         }
 
-        GameObject NerfDartPrefab = SpawnDart();
-
-        lastShot = Time.time + DartDelay;
-
+        // Play the shoot sound
         ShootDartSound();
 
-        //var bulletPrefab = Instantiate(DartPrefab, DartSpawnPosition.position, DartSpawnPosition.rotation);
-
-        var bulletPrefab = NerfDartPrefab;
-
-        var bulletRB = bulletPrefab.GetComponent<Rigidbody>();
-        var direction = bulletPrefab.transform.TransformDirection(Vector3.forward);
-        bulletRB.AddForce(direction * DartSpeed);
-        Destroy(bulletPrefab, 5f);
-
-
+        // Update the last shot time
+        lastShotTime = Time.time;
     }
 
     private void ShootDartSound()
     {
-        var random = Random.Range(0.8f, 1.2f);
-
-        audioSource.pitch = random;
-
-        audioSource.Play();
+        if (audioSource != null)
+        {
+            float randomPitch = Random.Range(0.8f, 1.2f);
+            audioSource.pitch = randomPitch;
+            audioSource.Play();
+        }
     }
-    #endregion
 }

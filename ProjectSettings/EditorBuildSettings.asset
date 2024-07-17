@@ -5,9 +5,12 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/[Scenes]/House Scene.unity
     guid: b193a92500fe9e0419baa337bd82d1b5
+  - enabled: 1
+    path: Assets/[Scenes]/Cisco's scene.unity
+    guid: 5216caa34eec04afebcc3058cb080618
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: cf4ff52ad1e3d0e4d8ee2ec1a35b159b,
       type: 2}
