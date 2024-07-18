@@ -9,6 +9,7 @@ TagManager:
   - DartSpawn
   - Paper
   - Weapon
+  - Zombie
   layers:
   - Default
   - TransparentFX
