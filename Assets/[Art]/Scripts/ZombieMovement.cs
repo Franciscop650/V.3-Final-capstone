@@ -37,7 +37,7 @@ public class ZombieMovementg : MonoBehaviour
         distanceToTarget = Vector3.Distance(transform.position, target.position);
         if (distanceToTarget <= range)
         {
-            range = 1000;
+            range = 100;
             LookAtTarget();
             navMeshAgent.speed = 2;
             animator.SetBool("isMoving", true);
