@@ -8,8 +8,9 @@ public class ZombieMovementg : MonoBehaviour
     NavMeshAgent navMeshAgent;
     [SerializeField] float turnSpeed = 10f;
     Animator animator;
-    float distanceToTarget;
+    float distanceToTarget = Mathf.Infinity;
     float health = 100;
+    [SerializeField] float range = 10f;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,9 +21,7 @@ public class ZombieMovementg : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        LookAtTarget();
         ChaseTarget();
-        distanceToTarget = Vector3.Distance(transform.position, target.position);
         AttackTarget();
     }
 
@@ -35,8 +34,21 @@ public class ZombieMovementg : MonoBehaviour
 
     void ChaseTarget()
     {
-        animator.SetBool("isMoving", true);
-        navMeshAgent.SetDestination(target.position);
+        distanceToTarget = Vector3.Distance(transform.position, target.position);
+        if (distanceToTarget <= range)
+        {
+            range = 1000;
+            LookAtTarget();
+            navMeshAgent.speed = 2;
+            animator.SetBool("isMoving", true);
+            animator.SetBool("isAttacking", false);
+            navMeshAgent.SetDestination(target.position);
+        }
+        else
+        {
+            animator.SetBool("isMoving", false);
+            navMeshAgent.speed = 0;
+        }
        
     }
     void AttackTarget()
@@ -46,11 +58,6 @@ public class ZombieMovementg : MonoBehaviour
             animator.SetBool("isMoving", false);
             animator.SetBool("isAttacking", true);
         }
-        if(distanceToTarget >= navMeshAgent.stoppingDistance)
-        {
-            animator.SetBool("isMoving", true);
-            animator.SetBool("isAttacking", false);
-        }
 
     }
 
@@ -58,14 +65,20 @@ public class ZombieMovementg : MonoBehaviour
     {
         if(collision.gameObject.tag == "Weapon")
         {
-            health -= 50;
+            health -= 25;
             Debug.Log("Hit!");
             if(health <= 0)
             {
-                Debug.Log("hello");
                 navMeshAgent.speed = 0;
                 animator.enabled = false;
+                StartCoroutine(DelayDeath());
             }
         }
+    }
+
+    IEnumerator DelayDeath()
+    {
+        yield return new WaitForSeconds(3f);
+        Destroy(gameObject);
     }
 }
