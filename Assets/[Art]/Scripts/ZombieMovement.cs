@@ -11,11 +11,17 @@ public class ZombieMovementg : MonoBehaviour
     float distanceToTarget = Mathf.Infinity;
     float health = 200;
     [SerializeField] float range = 10f;
+    [Space, SerializeField] private AudioSource audioSourceAttack;
+    [Space, SerializeField] private AudioSource audioSourceScream;
+    [SerializeField] private float screamDelay = 0.2f;
+    private float lastAttack;
+    private int screamCounter;
     // Start is called before the first frame update
     void Start()
     {
         navMeshAgent = GetComponent<NavMeshAgent>();
         animator = GetComponent<Animator>();
+        screamCounter = 0;
     }
 
     // Update is called once per frame
@@ -37,6 +43,11 @@ public class ZombieMovementg : MonoBehaviour
         distanceToTarget = Vector3.Distance(transform.position, target.position);
         if (distanceToTarget <= range)
         {
+            if(screamCounter == 0)
+            {
+                Scream();
+                screamCounter++;
+            }
             range = 100;
             LookAtTarget();
             navMeshAgent.speed = 2;
@@ -57,6 +68,7 @@ public class ZombieMovementg : MonoBehaviour
         {
             animator.SetBool("isMoving", false);
             animator.SetBool("isAttacking", true);
+            AttackAudio();
         }
 
     }
@@ -102,5 +114,16 @@ public class ZombieMovementg : MonoBehaviour
     {
         yield return new WaitForSeconds(3f);
         Destroy(gameObject);
+    }
+    private void Scream()
+    {
+        audioSourceScream.Play();
+    }
+    private void AttackAudio()
+    {
+        if (lastAttack > Time.time) return;
+
+        lastAttack = Time.time + screamDelay;
+        audioSourceAttack.Play();
     }
 }
