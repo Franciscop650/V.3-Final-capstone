@@ -10,6 +10,8 @@ TagManager:
   - Paper
   - Weapon
   - Zombie
+  - Bullet
+  - CircularBullet
   layers:
   - Default
   - TransparentFX

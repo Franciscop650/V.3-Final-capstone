@@ -19,6 +19,9 @@ public class SimpleShoot : MonoBehaviour
     [Tooltip("Specify time to destory the casing object")] [SerializeField] private float destroyTimer = 2f;
     [Tooltip("Bullet Speed")] [SerializeField] private float shotPower = 500f;
     [Tooltip("Casing Ejection Speed")] [SerializeField] private float ejectPower = 150f;
+    [Space, SerializeField] private AudioSource audioSource;
+    [SerializeField] private float shootDelay = 0.2f;
+    private float lastShot;
 
 
     void Start()
@@ -38,6 +41,16 @@ public class SimpleShoot : MonoBehaviour
             //Calls animation on the gun that has the relevant animation events that will fire
             gunAnimator.SetTrigger("Fire");
         }
+    }
+
+    public void StartShoot()
+    {
+        if (lastShot > Time.time) return;
+
+        lastShot = Time.time + shootDelay;
+        gunAnimator.SetTrigger("Fire");
+        GunShotAudio();
+
     }
 
 
@@ -80,6 +93,13 @@ public class SimpleShoot : MonoBehaviour
 
         //Destroy casing after X seconds
         Destroy(tempCasing, destroyTimer);
+    }
+    private void GunShotAudio()
+    {
+        var random = Random.Range(0.8f, 1.2f);
+        audioSource.pitch = random;
+
+        audioSource.Play();
     }
 
 }

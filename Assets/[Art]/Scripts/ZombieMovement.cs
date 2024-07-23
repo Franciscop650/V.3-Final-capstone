@@ -9,7 +9,7 @@ public class ZombieMovementg : MonoBehaviour
     [SerializeField] float turnSpeed = 10f;
     Animator animator;
     float distanceToTarget = Mathf.Infinity;
-    float health = 100;
+    float health = 200;
     [SerializeField] float range = 10f;
     // Start is called before the first frame update
     void Start()
@@ -65,9 +65,31 @@ public class ZombieMovementg : MonoBehaviour
     {
         if(collision.gameObject.tag == "Weapon")
         {
-            health -= 25;
+            health -= 75;
             Debug.Log("Hit!");
             if(health <= 0)
+            {
+                navMeshAgent.speed = 0;
+                animator.enabled = false;
+                StartCoroutine(DelayDeath());
+            }
+        }
+        if (collision.gameObject.tag == "Bullet")
+        {
+            health -= 50;
+            Debug.Log("Hit!");
+            if (health <= 0)
+            {
+                navMeshAgent.speed = 0;
+                animator.enabled = false;
+                StartCoroutine(DelayDeath());
+            }
+        }
+        if (collision.gameObject.tag == "CircularBullet")
+        {
+            health -= 20;
+            Debug.Log("Hit!");
+            if (health <= 0)
             {
                 navMeshAgent.speed = 0;
                 animator.enabled = false;
