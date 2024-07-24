@@ -135,6 +135,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Survival Melee Weapon 4
       objectReference: {fileID: 0}
+    - target: {fileID: 6463930976615227425, guid: b3e7c371955b9d04a9a79256bb008328,
+        type: 3}
+      propertyPath: m_TagString
+      value: Weapon
+      objectReference: {fileID: 0}
     - target: {fileID: 8065708481377571378, guid: b3e7c371955b9d04a9a79256bb008328,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -421,8 +426,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.16488703, y: 1.0859747, z: 0.15237728}
-  m_Center: {x: -0.0021472052, y: 0.0055018067, z: -0.00211047}
+  m_Size: {x: 0.049540326, y: 0.2009159, z: 0.06531542}
+  m_Center: {x: -0.0013660103, y: -0.43703896, z: 0.00021072569}
 --- !u!1001 &201888528
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -926,6 +931,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: axe
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: b92e432993e63b740a483cc7a150f000, type: 3}
+      propertyPath: m_TagString
+      value: Weapon
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: b92e432993e63b740a483cc7a150f000, type: 3}
       propertyPath: m_LocalScale.x
       value: 5
@@ -1053,8 +1062,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.69099534, y: 0.033897415, z: 0.1913023}
-  m_Center: {x: 0.012534559, y: -0.000000005587937, z: 0}
+  m_Size: {x: 0.19104263, y: 0.014120777, z: 0.072246075}
+  m_Center: {x: -0.18709753, y: -0.0020606816, z: 0.05952807}
 --- !u!114 &677233148
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1347,6 +1356,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Survival Melee Weapon 3
       objectReference: {fileID: 0}
+    - target: {fileID: 5460236432652059392, guid: 217ee16bc0a693249adf65b7044f9d41,
+        type: 3}
+      propertyPath: m_TagString
+      value: Weapon
+      objectReference: {fileID: 0}
     - target: {fileID: 9051656649970397459, guid: 217ee16bc0a693249adf65b7044f9d41,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -1454,8 +1468,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.15041001, y: 0.4958798, z: 0.14089745}
-  m_Center: {x: 0.00350637, y: 0.2436762, z: -0.006975651}
+  m_Size: {x: 0.040499885, y: 0.09741439, z: 0.037484474}
+  m_Center: {x: 0.0022514313, y: 0.10717043, z: -0.0020536128}
 --- !u!114 &817305076
 MonoBehaviour:
   m_ObjectHideFlags: 0
