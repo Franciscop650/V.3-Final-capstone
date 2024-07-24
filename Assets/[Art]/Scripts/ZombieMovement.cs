@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI; 
-public class ZombieMovementg : MonoBehaviour
+public class ZombieMovement : MonoBehaviour
 {
     [SerializeField] Transform target;
     NavMeshAgent navMeshAgent;
@@ -16,6 +16,11 @@ public class ZombieMovementg : MonoBehaviour
     [SerializeField] private float screamDelay = 0.2f;
     private float lastAttack;
     private int screamCounter;
+    public Health playerHealth;
+    private float damage = 30f;
+    [SerializeField] private float attackDelay = 0.2f;
+    private float attack;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -62,13 +67,14 @@ public class ZombieMovementg : MonoBehaviour
         }
        
     }
-    void AttackTarget()
+    public void AttackTarget()
     {
         if (distanceToTarget <= navMeshAgent.stoppingDistance)
         {
             animator.SetBool("isMoving", false);
             animator.SetBool("isAttacking", true);
             AttackAudio();
+
         }
 
     }
@@ -125,5 +131,13 @@ public class ZombieMovementg : MonoBehaviour
 
         lastAttack = Time.time + screamDelay;
         audioSourceAttack.Play();
+        playerHealth.takeDamage(damage);
+    }
+    private void AttackDelay()
+    {
+        if (attack > Time.time) return;
+
+        attack = Time.time + attackDelay;
+        playerHealth.takeDamage(damage);
     }
 }
