@@ -12,6 +12,8 @@ TagManager:
   - Zombie
   - Bullet
   - CircularBullet
+  - PhoenixTP
+  - Camera
   layers:
   - Default
   - TransparentFX
