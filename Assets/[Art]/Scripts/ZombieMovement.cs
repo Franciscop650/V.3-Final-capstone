@@ -74,7 +74,6 @@ public class ZombieMovement : MonoBehaviour
             animator.SetBool("isMoving", false);
             animator.SetBool("isAttacking", true);
             AttackAudio();
-
         }
 
     }
@@ -118,7 +117,7 @@ public class ZombieMovement : MonoBehaviour
 
     IEnumerator DelayDeath()
     {
-        yield return new WaitForSeconds(3f);
+        yield return new WaitForSeconds(2f);
         Destroy(gameObject);
     }
     private void Scream()

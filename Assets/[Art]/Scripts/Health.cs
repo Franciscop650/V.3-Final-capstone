@@ -26,6 +26,7 @@ public class Health : MonoBehaviour
         currentHealth -= damage;
         if (currentHealth <= 0 && !isDead)
         {
+            Debug.Log("dead");
             isDead = true;
             gameOver.Show();
             gameOver.RunWaitForXSeconds(5);
