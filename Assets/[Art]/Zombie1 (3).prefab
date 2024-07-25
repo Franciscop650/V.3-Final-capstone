@@ -3708,7 +3708,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 0}
   turnSpeed: 10
-  range: 10
+  range: 15
   audioSourceAttack: {fileID: 7082683384071124562}
   audioSourceScream: {fileID: 5430082443210076041}
   screamDelay: 1
