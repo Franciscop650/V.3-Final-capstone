@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.AI; 
 public class ZombieMovement : MonoBehaviour
 {
-    [SerializeField] Transform target;
+    Transform target;
     NavMeshAgent navMeshAgent;
     [SerializeField] float turnSpeed = 10f;
     Animator animator;
@@ -27,6 +27,8 @@ public class ZombieMovement : MonoBehaviour
         navMeshAgent = GetComponent<NavMeshAgent>();
         animator = GetComponent<Animator>();
         screamCounter = 0;
+
+        target = FindObjectOfType<PlayerMovement>().gameObject.transform;
     }
 
     // Update is called once per frame
