@@ -374,7 +374,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 2
+  m_Speed: 3
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
@@ -400,7 +400,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 652856292}
   turnSpeed: 10
-  range: 10
+  range: 15
   audioSourceAttack: {fileID: 512732}
   audioSourceScream: {fileID: 512733}
   screamDelay: 1
@@ -1915,7 +1915,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 2
+  m_Speed: 3
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
@@ -1941,7 +1941,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 652856292}
   turnSpeed: 10
-  range: 10
+  range: 15
   audioSourceAttack: {fileID: 37735667}
   audioSourceScream: {fileID: 37735668}
   screamDelay: 1
@@ -2589,7 +2589,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 2
+  m_Speed: 3
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
@@ -2615,7 +2615,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 652856292}
   turnSpeed: 10
-  range: 10
+  range: 15
   audioSourceAttack: {fileID: 62378222}
   audioSourceScream: {fileID: 62378223}
   screamDelay: 1
@@ -3245,7 +3245,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 2
+  m_Speed: 3
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
@@ -3271,7 +3271,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 652856292}
   turnSpeed: 10
-  range: 10
+  range: 15
   audioSourceAttack: {fileID: 92026964}
   audioSourceScream: {fileID: 92026965}
   screamDelay: 1
@@ -4649,7 +4649,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 2
+  m_Speed: 3
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
@@ -4675,7 +4675,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 652856292}
   turnSpeed: 10
-  range: 10
+  range: 15
   audioSourceAttack: {fileID: 130895614}
   audioSourceScream: {fileID: 130895615}
   screamDelay: 1
@@ -6339,7 +6339,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 2
+  m_Speed: 3
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
@@ -6365,7 +6365,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 652856292}
   turnSpeed: 10
-  range: 10
+  range: 15
   audioSourceAttack: {fileID: 181491345}
   audioSourceScream: {fileID: 181491346}
   screamDelay: 1
@@ -9068,7 +9068,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 2
+  m_Speed: 3
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
@@ -9094,7 +9094,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 652856292}
   turnSpeed: 10
-  range: 10
+  range: 15
   audioSourceAttack: {fileID: 310835384}
   audioSourceScream: {fileID: 310835385}
   screamDelay: 1
@@ -11102,7 +11102,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 2
+  m_Speed: 3
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
@@ -11128,7 +11128,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 652856292}
   turnSpeed: 10
-  range: 10
+  range: 15
   audioSourceAttack: {fileID: 395579229}
   audioSourceScream: {fileID: 395579230}
   screamDelay: 1
@@ -11682,7 +11682,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 2
+  m_Speed: 3
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
@@ -11708,7 +11708,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 652856292}
   turnSpeed: 10
-  range: 10
+  range: 15
   audioSourceAttack: {fileID: 407664693}
   audioSourceScream: {fileID: 407664694}
   screamDelay: 1
@@ -14809,7 +14809,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 2
+  m_Speed: 3
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
@@ -14835,7 +14835,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 652856292}
   turnSpeed: 10
-  range: 10
+  range: 15
   audioSourceAttack: {fileID: 496420699}
   audioSourceScream: {fileID: 496420700}
   screamDelay: 1
@@ -15093,7 +15093,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 2
+  m_Speed: 3
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
@@ -15119,7 +15119,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 652856292}
   turnSpeed: 10
-  range: 10
+  range: 15
   audioSourceAttack: {fileID: 509278186}
   audioSourceScream: {fileID: 509278187}
   screamDelay: 1
@@ -15736,7 +15736,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 2
+  m_Speed: 3
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
@@ -15762,7 +15762,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 652856292}
   turnSpeed: 10
-  range: 10
+  range: 15
   audioSourceAttack: {fileID: 520264059}
   audioSourceScream: {fileID: 520264060}
   screamDelay: 1
@@ -17707,7 +17707,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 2
+  m_Speed: 3
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
@@ -17733,7 +17733,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 652856292}
   turnSpeed: 10
-  range: 10
+  range: 15
   audioSourceAttack: {fileID: 604136662}
   audioSourceScream: {fileID: 604136663}
   screamDelay: 1
@@ -19301,7 +19301,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 2
+  m_Speed: 3
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
@@ -19327,7 +19327,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 652856292}
   turnSpeed: 10
-  range: 10
+  range: 15
   audioSourceAttack: {fileID: 641530080}
   audioSourceScream: {fileID: 641530081}
   screamDelay: 1
@@ -23091,7 +23091,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 2
+  m_Speed: 3
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
@@ -23117,7 +23117,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 652856292}
   turnSpeed: 10
-  range: 10
+  range: 15
   audioSourceAttack: {fileID: 799350615}
   audioSourceScream: {fileID: 799350616}
   screamDelay: 1
@@ -23563,7 +23563,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 2
+  m_Speed: 3
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
@@ -23589,7 +23589,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 652856292}
   turnSpeed: 10
-  range: 10
+  range: 15
   audioSourceAttack: {fileID: 818571404}
   audioSourceScream: {fileID: 818571405}
   screamDelay: 1
@@ -26985,7 +26985,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 2
+  m_Speed: 3
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
@@ -27011,7 +27011,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 652856292}
   turnSpeed: 10
-  range: 10
+  range: 15
   audioSourceAttack: {fileID: 863742856}
   audioSourceScream: {fileID: 863742857}
   screamDelay: 1
@@ -32456,7 +32456,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 2
+  m_Speed: 3
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
@@ -32482,7 +32482,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 652856292}
   turnSpeed: 10
-  range: 10
+  range: 15
   audioSourceAttack: {fileID: 1005920193}
   audioSourceScream: {fileID: 1005920194}
   screamDelay: 1
@@ -34233,7 +34233,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 2
+  m_Speed: 3
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
@@ -34259,7 +34259,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 652856292}
   turnSpeed: 10
-  range: 10
+  range: 15
   audioSourceAttack: {fileID: 1058157285}
   audioSourceScream: {fileID: 1058157286}
   screamDelay: 1
@@ -35747,7 +35747,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 2
+  m_Speed: 3
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
@@ -35773,7 +35773,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 652856292}
   turnSpeed: 10
-  range: 10
+  range: 15
   audioSourceAttack: {fileID: 1137163175}
   audioSourceScream: {fileID: 1137163176}
   screamDelay: 1
@@ -36478,7 +36478,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 2
+  m_Speed: 3
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
@@ -36504,7 +36504,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 652856292}
   turnSpeed: 10
-  range: 10
+  range: 15
   audioSourceAttack: {fileID: 1190339868}
   audioSourceScream: {fileID: 1190339869}
   screamDelay: 1
@@ -38441,7 +38441,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 2
+  m_Speed: 3
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
@@ -38467,7 +38467,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 652856292}
   turnSpeed: 10
-  range: 10
+  range: 15
   audioSourceAttack: {fileID: 1310154689}
   audioSourceScream: {fileID: 1310154690}
   screamDelay: 1
@@ -39954,7 +39954,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 2
+  m_Speed: 3
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
@@ -39980,7 +39980,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 652856292}
   turnSpeed: 10
-  range: 10
+  range: 15
   audioSourceAttack: {fileID: 1347446978}
   audioSourceScream: {fileID: 1347446979}
   screamDelay: 1
@@ -41972,7 +41972,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 2
+  m_Speed: 3
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
@@ -41998,7 +41998,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 652856292}
   turnSpeed: 10
-  range: 10
+  range: 15
   audioSourceAttack: {fileID: 1391294194}
   audioSourceScream: {fileID: 1391294195}
   screamDelay: 1
@@ -45075,7 +45075,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 2
+  m_Speed: 3
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
@@ -45101,7 +45101,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 652856292}
   turnSpeed: 10
-  range: 10
+  range: 15
   audioSourceAttack: {fileID: 1478195347}
   audioSourceScream: {fileID: 1478195348}
   screamDelay: 1
@@ -45753,7 +45753,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 2
+  m_Speed: 3
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
@@ -45779,7 +45779,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 652856292}
   turnSpeed: 10
-  range: 10
+  range: 15
   audioSourceAttack: {fileID: 1492541651}
   audioSourceScream: {fileID: 1492541652}
   screamDelay: 1
@@ -46219,7 +46219,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 2
+  m_Speed: 3
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
@@ -46245,7 +46245,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 652856292}
   turnSpeed: 10
-  range: 10
+  range: 15
   audioSourceAttack: {fileID: 1499786498}
   audioSourceScream: {fileID: 1499786499}
   screamDelay: 1
@@ -53549,7 +53549,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 2
+  m_Speed: 3
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
@@ -53575,7 +53575,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 652856292}
   turnSpeed: 10
-  range: 10
+  range: 15
   audioSourceAttack: {fileID: 1544008000}
   audioSourceScream: {fileID: 1544008001}
   screamDelay: 1
@@ -55149,7 +55149,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 2
+  m_Speed: 3
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
@@ -55175,7 +55175,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 652856292}
   turnSpeed: 10
-  range: 10
+  range: 15
   audioSourceAttack: {fileID: 1607705094}
   audioSourceScream: {fileID: 1607705095}
   screamDelay: 1
@@ -58021,7 +58021,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 2
+  m_Speed: 3
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
@@ -58047,7 +58047,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 652856292}
   turnSpeed: 10
-  range: 10
+  range: 15
   audioSourceAttack: {fileID: 1739183328}
   audioSourceScream: {fileID: 1739183329}
   screamDelay: 1
@@ -65386,7 +65386,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 2
+  m_Speed: 3
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
@@ -65412,7 +65412,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 652856292}
   turnSpeed: 10
-  range: 10
+  range: 15
   audioSourceAttack: {fileID: 2012931929}
   audioSourceScream: {fileID: 2012931930}
   screamDelay: 1
@@ -68310,7 +68310,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 2
+  m_Speed: 3
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
@@ -68336,7 +68336,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 652856292}
   turnSpeed: 10
-  range: 10
+  range: 15
   audioSourceAttack: {fileID: 2130308352}
   audioSourceScream: {fileID: 2130308353}
   screamDelay: 1
@@ -69519,6 +69519,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1510049262678563777, guid: a9638a8637e9944c7b683a16d0be1c0d,
         type: 3}
+      propertyPath: range
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 1510049262678563777, guid: a9638a8637e9944c7b683a16d0be1c0d,
+        type: 3}
       propertyPath: target
       value: 
       objectReference: {fileID: 652856292}
@@ -69527,6 +69532,11 @@ PrefabInstance:
       propertyPath: playerHealth
       value: 
       objectReference: {fileID: 2059336019}
+    - target: {fileID: 2162364472715612563, guid: a9638a8637e9944c7b683a16d0be1c0d,
+        type: 3}
+      propertyPath: m_Speed
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 5961315140378783858, guid: a9638a8637e9944c7b683a16d0be1c0d,
         type: 3}
       propertyPath: m_LocalPosition.x
